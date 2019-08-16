@@ -295,3 +295,16 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.forms {
+  display: flex;
+}
+.member {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.signup {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
