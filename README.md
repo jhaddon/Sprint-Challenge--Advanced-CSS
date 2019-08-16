@@ -38,7 +38,7 @@ Both styles (adaptive and responsive) serve the same purpose of displaying a wel
 
 2. Describe what it means to be mobile first vs desktop first.
 
-Mobile first vs desktop first are just different design paradigms. Mobile first starts off with a base design fit for a mobil device and then scales up to larger screen sizes. Desktop first starts off with a computer in mind first, and then scales down to smaller sizes. Which option you go with depends on the primary target audience and use case.
+Mobile first vs desktop first are just different design paradigms. Mobile first starts off with a base design fit for a mobil device and then scales up to larger screen sizes. Desktop first starts off with a computer in mind first, and then scales down to smaller sizes. Which option you go with depends on the primary target audience and use case. Mobile first tends to use min-width to add on more complex features/functions.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
