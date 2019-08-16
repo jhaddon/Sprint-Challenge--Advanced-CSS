@@ -1,1 +1,25 @@
 // Mixins Here
+
+.custom-btn(@background, @color, @size) {
+    background: @background;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: @color;
+    font-size: @size;
+    width: 30%;
+
+    &:hover {
+        background: @color;
+        color: @background;
+    }
+  }
+
+  .flex {
+      display: flex;
+  }
+
+  .fullwidth {
+      width: 100%;
+  }

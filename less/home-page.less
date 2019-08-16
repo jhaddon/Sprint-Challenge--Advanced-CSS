@@ -15,17 +15,34 @@
   }
 
   .space-images {
-    display: flex;
+    .flex();
     flex-wrap: wrap;
-    width: 100%;
+    .fullwidth();
+
+    .sky {
+      @media @phone {
+        display: none;
+      }
+    }
+
+    .launch {
+      @media @phone {
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 97%;
+      }
     }
   }
+
 
   .visit-planets {
     padding: 15px;
@@ -43,8 +60,13 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
+    .flex();
     justify-content: center;
+
+    @media @phone {
+      padding: 15px;
+      flex-direction: column-reverse;
+    }
 
     .walk-text {
       width: 50%;
@@ -57,16 +79,26 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn{
+        .custom-btn(@btn-bg-color, @sea-shell, 1.5rem)
+      }
+
+      @media @phone {
+        .fullwidth();
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        width: 97%;
+        padding-bottom: 5px;
+        margin: 20px 2.5%;
+      }
       
       img {
-        width: 100%;
+        .fullwidth();
         height: auto;
         border-radius: 10px;
       }
