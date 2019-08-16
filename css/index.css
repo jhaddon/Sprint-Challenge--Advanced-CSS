@@ -1,3 +1,9 @@
+.flex {
+  display: flex;
+}
+.fullwidth {
+  width: 100%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -176,7 +182,7 @@ a {
   color: #454A59;
   text-decoration: none;
   font-size: 1.6rem;
-  padding: 15px;
+  padding: 13px;
 }
 .nav {
   margin: 15px;
@@ -279,8 +285,9 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
-    width: 95%;
+    width: 97%;
     padding-bottom: 5px;
+    margin: 20px 2.5%;
   }
 }
 .home .walk .walk-img img {

@@ -15,9 +15,9 @@
   }
 
   .space-images {
-    display: flex;
+    .flex();
     flex-wrap: wrap;
-    width: 100%;
+    .fullwidth();
 
     .sky {
       @media @phone {
@@ -60,7 +60,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
+    .flex();
     justify-content: center;
 
     @media @phone {
@@ -84,7 +84,7 @@
       }
 
       @media @phone {
-        width: 100%;
+        .fullwidth();
       }
     }
 
@@ -92,12 +92,13 @@
       width: 46%;
       margin-left: 4%;
       @media @phone {
-        width: 95%;
+        width: 97%;
         padding-bottom: 5px;
+        margin: 20px 2.5%;
       }
       
       img {
-        width: 100%;
+        .fullwidth();
         height: auto;
         border-radius: 10px;
       }
